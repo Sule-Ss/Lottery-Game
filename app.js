@@ -4,6 +4,8 @@ let reset = document.getElementById("reset");
 let numbers = document.getElementById("numbers");
 // let liste = document.querySelector(".liste");
 
+numberInput.focus();
+
 const createLine = (numberList) => {
   return `<div class="liste">
     <span>${numberList[0]}</span>
@@ -51,16 +53,15 @@ function clickFunc() {
 
     count += 1;
     numbers.innerHTML += createLine(numberList);
-    
   }
   numberInput.value = "";
   luckyButton.disabled = true;
   luckyButton.style.opacity = "0.5";
-  
 
-  reset.addEventListener("click",()=> {
-   numbers.innerHTML = "";
+  reset.addEventListener("click", () => {
+    numbers.innerHTML = "";
     luckyButton.disabled = false;
-  luckyButton.style.opacity = "1";
+    luckyButton.style.opacity = "1";
+    numberInput.focus();
   });
-};
+}

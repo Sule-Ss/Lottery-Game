@@ -13,13 +13,20 @@ h1 {
     font-family: 'Akaya Telivigala', cursive;
     border-radius: 0em 3em;
     border-style: outset;
-    background-color: gold;
+    background-color: #FCD8CA;
 
 }
 
 body {
-    background-color: black;
+    /* background-color: black; */
     color: white;
+
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    
+    background-repeat: none;
+    min-height: 100vh;
+
 }
 
 .container {
@@ -36,6 +43,7 @@ body {
     margin-bottom: 0.5em;
     text-align: center;
     outline: none;
+    border-radius: 5px;
 }
 
 input[type=number]::-webkit-inner-spin-button,
